@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+/* nav {
+  display: flex;
+  width: 100%;
+  background: rgba(25, 65, 39, 1);
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px 10px;
+  align-items: center; /* จัดตำแหน่งภายใน navbar ให้อยู่ตรงกลาง */
+/* } */
+/* nav .logo img { */
+  /* width: 100px; ปรับความกว้างของโลโก้ */
+  /* height: 50px; ให้รูปปรับขนาดตามอัตราส่วน */
+  /* margin: auto; */
+  /* margin-left: 25px; */
+  /*  */
+/* } */
+/* nav .language img {
+  width: 35px; /* ปรับความกว้างของโลโก้ */
+  /* height: 35px; /* ให้รูปปรับขนาดตามอัตราส่วน */
+  /* margin: auto;
+  margin-left: 25px; */
+   /* */ 
+/* } */ 
+
+
+
+
+.container {
+  position: relative;  /* เพื่อให้ภาพทั้งสองในนั้นเรียงต่อกันในพื้นที่ของ  */
+  text-align: center;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  
+}
+
+.overlay-image {    /* ป็นภาพที่จะถูกซ้อนทับ มี position: absolute; เพื่อให้สามารถกำหนดตำแหน่งให้เองได้ */
+  position: absolute; 
+  bottom: -15%;
+  left: 50%;
+  width: 15%;
+  transform: translateX(-50%); /* ย้ายภาพไปทางซ้าย 50% ของความกว้างของตนเอง เพื่อให้ภาพอยู่ต่ำลงมา */
+  z-index: 1; /* ให้ภาพนี้อยู่ด้านบน */
+}
+.scooby-text {
+  position: absolute;
+  bottom: -25%; /* ขยับขึ้นลงตามต้องการ */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color:rgba(25, 65, 39, 0.47);
+  text-decoration-offset: 1px; 
+  /* text-decoration-thickness: 2px; */
+  text-underline-position: under; /* ระบุตำแหน่งของเส้นใต้ */
+}
+
+.Person-text{
+text-align: left;
+margin-left: 100px;
+margin-top: 150px;
+
+}
+.info {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right; /* เพิ่มบรรทัดนี้เพื่อจัดตำแหน่งข้อความทางขวามือ */
+}
+
+.edit {
+  margin-left: 10px; /* ปรับตำแหน่งซ้าย */
+  margin-right: 100px; /* ปรับตำแหน่งขวา */
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Review {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px; 
+}
